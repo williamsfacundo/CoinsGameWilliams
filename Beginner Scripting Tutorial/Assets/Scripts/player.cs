@@ -21,7 +21,7 @@ public class player : MonoBehaviour
     int score = 0;
     short lifes = 3;
     short deaths = 0;
-    float endGameTimer = 12f;    
+    float endGameTimer = 120f;    
     bool isCollidingWithFloor = false;
 
     private float zMoveVelocity = 8f;
