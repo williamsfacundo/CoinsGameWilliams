@@ -7,8 +7,6 @@ public class SqlConnectData : MonoBehaviour
 {
     public void CallRegister() 
     {
-        Debug.Log(SaveName.GetUserName());
-
         StartCoroutine(Register());
     }
 
@@ -27,7 +25,7 @@ public class SqlConnectData : MonoBehaviour
 
         if (www.result == UnityWebRequest.Result.Success) 
         {
-            Debug.Log("Cargando");
+            Debug.Log(www.downloadHandler.text + " cargando");
         }
     }
 }
